@@ -1,0 +1,200 @@
+Przed rozpoczêciem pracy z aplikacj¹ nale¿y œci¹gn¹æ i uruchomiæ MySQL Server
+(https://dev.mysql.com/downloads/mysql/).
+Utworzyæ server z portem 3306 i has³em dostêpu "wiazar".
+Nastêpnie, poprzez wpisanie poni¿szych instrukcji utworzyæ bazê danych.
+
+CREATE DATABASE erp; 
+
+USE erp;
+
+CREATE TABLE `dostawa`
+( `numer_dostawy` VARCHAR(50) NOT NULL,
+`data_dostawy` DATE NOT NULL,
+PRIMARY KEY (`numer_dostawy`) 
+);
+
+CREATE TABLE `praca`
+( `numer_pracy` VARCHAR(50) NOT NULL,
+`data_pracy` DATE NOT NULL,
+PRIMARY KEY (`numer_pracy`) 
+);
+
+CREATE TABLE `45x95`
+(
+	`3200` INT(3) ,
+	`3500` INT(3) ,
+	`3800` INT(3) ,
+	`4100` INT(3) ,
+	`4400` INT(3) ,
+	`4700` INT(3) ,
+	`5000` INT(3),
+	`5300` INT(3) ,
+	`numer_dostawy` VARCHAR(50),
+	FOREIGN KEY (`numer_dostawy`)
+	REFERENCES `dostawa`(`numer_dostawy`),
+	`numer_pracy` VARCHAR(50),
+	FOREIGN KEY (`numer_pracy`)
+	REFERENCES `praca`(`numer_pracy`)
+);
+
+CREATE TABLE `45x145`
+(
+	`3200` INT(3) ,
+	`3500` INT(3) ,
+	`3800` INT(3) ,
+	`4100` INT(3) ,
+	`4400` INT(3) ,
+	`4700` INT(3) ,
+	`5000` INT(3),
+	`5300` INT(3) ,
+	`numer_dostawy` VARCHAR(50),
+	FOREIGN KEY (`numer_dostawy`)
+	REFERENCES `dostawa`(`numer_dostawy`),
+	`numer_pracy` VARCHAR(50),
+	FOREIGN KEY (`numer_pracy`)
+	REFERENCES `praca`(`numer_pracy`)
+);
+
+CREATE TABLE `45x170`
+(
+	`3200` INT(3) ,
+	`3500` INT(3) ,
+	`3800` INT(3) ,
+	`4100` INT(3) ,
+	`4400` INT(3) ,
+	`4700` INT(3) ,
+	`5000` INT(3),
+	`5300` INT(3) ,
+	`numer_dostawy` VARCHAR(50),
+	FOREIGN KEY (`numer_dostawy`)
+	REFERENCES `dostawa`(`numer_dostawy`),
+	`numer_pracy` VARCHAR(50),
+	FOREIGN KEY (`numer_pracy`)
+	REFERENCES `praca`(`numer_pracy`)
+);
+
+CREATE TABLE `45x195`
+(
+	`3200` INT(3) ,
+	`3500` INT(3) ,
+	`3800` INT(3) ,
+	`4100` INT(3) ,
+	`4400` INT(3) ,
+	`4700` INT(3) ,
+	`5000` INT(3),
+	`5300` INT(3) ,
+	`numer_dostawy` VARCHAR(50),
+	FOREIGN KEY (`numer_dostawy`)
+	REFERENCES `dostawa`(`numer_dostawy`),
+	`numer_pracy` VARCHAR(50),
+	FOREIGN KEY (`numer_pracy`)
+	REFERENCES `praca`(`numer_pracy`)
+);
+
+CREATE TABLE `45x220`
+(
+	`3200` INT(3) ,
+	`3500` INT(3) ,
+	`3800` INT(3) ,
+	`4100` INT(3) ,
+	`4400` INT(3) ,
+	`4700` INT(3) ,
+	`5000` INT(3),
+	`5300` INT(3) ,
+	`numer_dostawy` VARCHAR(50),
+	FOREIGN KEY (`numer_dostawy`)
+	REFERENCES `dostawa`(`numer_dostawy`),
+	`numer_pracy` VARCHAR(50),
+	FOREIGN KEY (`numer_pracy`)
+	REFERENCES `praca`(`numer_pracy`)
+);
+
+CREATE TABLE `60x95`
+(
+	`3200` INT(3) ,
+	`3500` INT(3) ,
+	`3800` INT(3) ,
+	`4100` INT(3) ,
+	`4400` INT(3) ,
+	`4700` INT(3) ,
+	`5000` INT(3),
+	`5300` INT(3) ,
+	`numer_dostawy` VARCHAR(50),
+	FOREIGN KEY (`numer_dostawy`)
+	REFERENCES `dostawa`(`numer_dostawy`),
+	`numer_pracy` VARCHAR(50),
+	FOREIGN KEY (`numer_pracy`)
+	REFERENCES `praca`(`numer_pracy`)
+);
+
+CREATE TABLE `60x145`
+(
+	`3200` INT(3) ,
+	`3500` INT(3) ,
+	`3800` INT(3) ,
+	`4100` INT(3) ,
+	`4400` INT(3) ,
+	`4700` INT(3) ,
+	`5000` INT(3),
+	`5300` INT(3) ,
+	`numer_dostawy` VARCHAR(50),
+	FOREIGN KEY (`numer_dostawy`)
+	REFERENCES `dostawa`(`numer_dostawy`),
+	`numer_pracy` VARCHAR(50),
+	FOREIGN KEY (`numer_pracy`)
+	REFERENCES `praca`(`numer_pracy`)
+);
+
+CREATE TABLE `60x170`
+(
+	`3200` INT(3) ,
+	`3500` INT(3) ,
+	`3800` INT(3) ,
+	`4100` INT(3) ,
+	`4400` INT(3) ,
+	`4700` INT(3) ,
+	`5000` INT(3),
+	`5300` INT(3) ,
+	`numer_dostawy` VARCHAR(50),
+	FOREIGN KEY (`numer_dostawy`)
+	REFERENCES `dostawa`(`numer_dostawy`),
+	`numer_pracy` VARCHAR(50),
+	FOREIGN KEY (`numer_pracy`)
+	REFERENCES `praca`(`numer_pracy`)
+);
+
+CREATE TABLE `60x195`
+(
+	`3200` INT(3) ,
+	`3500` INT(3) ,
+	`3800` INT(3) ,
+	`4100` INT(3) ,
+	`4400` INT(3) ,
+	`4700` INT(3) ,
+	`5000` INT(3),
+	`5300` INT(3) ,
+	`numer_dostawy` VARCHAR(50),
+	FOREIGN KEY (`numer_dostawy`)
+	REFERENCES `dostawa`(`numer_dostawy`),
+	`numer_pracy` VARCHAR(50),
+	FOREIGN KEY (`numer_pracy`)
+	REFERENCES `praca`(`numer_pracy`)
+);
+
+CREATE TABLE `60x220`
+(
+	`3200` INT(3) ,
+	`3500` INT(3) ,
+	`3800` INT(3) ,
+	`4100` INT(3) ,
+	`4400` INT(3) ,
+	`4700` INT(3) ,
+	`5000` INT(3),
+	`5300` INT(3) ,
+	`numer_dostawy` VARCHAR(50),
+	FOREIGN KEY (`numer_dostawy`)
+	REFERENCES `dostawa`(`numer_dostawy`),
+	`numer_pracy` VARCHAR(50),
+	FOREIGN KEY (`numer_pracy`)
+	REFERENCES `praca`(`numer_pracy`)
+);
